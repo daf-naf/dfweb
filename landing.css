@@ -27,14 +27,14 @@ svg {
     left: 0;
 }
 #WEB , #DF {
-    animation: type-fade 5s ease-in-out 1;
+    animation: type-fade 7s ease-in-out 1;
 }
 
 @keyframes type-fade {
     0% {
         opacity: 0;
     }
-    45% {
+    20% {
         opacity: 0;
     }
     100%{

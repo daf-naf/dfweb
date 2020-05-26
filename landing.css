@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+
+.flexcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: column wrap;
+}
+
+
+.logo {
+    margin-top: 40px;
+    margin-left: 20px; 
+    width: 37%;
+    min-width: 150px;
+    height: 0;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#WEB , #DF {
+    animation: type-fade 5s ease-in-out 1;
+}
+
+@keyframes type-fade {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#foot {
+    animation: foot 5s ease-out 1;
+    transform-origin: right bottom;
+   
+
+    
+  }
+@keyframes foot {
+    0% {
+        transform: rotate(-60deg);
+        opacity: 0;
+      }
+    40% {opacity: 0;
+    }
+    90% {
+        transform: rotate(0deg);
+        opacity: 1;
+      }
+ 
+
+
+}
+#hand {
+    animation: hand1 5s ease-out 1;
+    transform-origin: right top;
+   
+}
+
+@keyframes hand1 {
+    0% {
+        transform: rotate(60deg);
+        opacity: 0;
+      }
+    42% {opacity: 0;
+    }
+    90% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.justified {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 40px;
+   
+
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 6vw;
+}
+#banner1 {
+    animation: faded 4s ease-in;
+}
+@keyframes faded {
+    from {opacity: 0;}
+  to {opacity: 1;}
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+#banner2 {
+    animation: faded2 7s ease-in;
+}
+@keyframes faded2 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    70% {opacity: 1;}
+}
+
+
+.btn{
+    background-color: #E93E3A;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3vw;
+    text-shadow: 0 2px 10px  rgb(233, 190, 233);
+    box-shadow: 0 0 20px 3px #ffed35;
+    border-radius: 25px;
+    border: none;
+    padding: 0.5% 3.5% 2.5%;
+    position: relative;
+  z-index: 1; /* matters! */
+  background: linear-gradient(
+    to bottom right,
+    #E93E3A,
+    #ffed35
+  );
+    
+}
+
+
+.btn::before {
+  content: "";
+  box-shadow: 0 0 15px 2px rgb(233, 190, 233);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    #2684c4,
+    rgb(233, 190, 233)
+  );
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: -1;
+  border-radius: 25px;
+}
+.btn:hover::before {
+  opacity: 0.7;
+}
+

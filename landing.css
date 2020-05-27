@@ -126,11 +126,11 @@ h2{
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 3vw;
-    text-shadow: 0 2px 7px  rgb(233, 190, 233);
+    text-shadow: 0 2px 7px rgb(233, 190, 233);
     box-shadow: 1px 2px #e94039;
     border-radius: 25px;
     border: none;
-    padding: 0 0.4em 0.4em;
+    padding: 0 0.6em 0.4em;
     position: relative;
   z-index: 1; /* matters! */
   background: linear-gradient(

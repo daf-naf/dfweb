@@ -128,8 +128,7 @@ h2{
     font-size: 3vw;
     text-shadow: 0 2px 7px rgb(233, 190, 233);
     border-radius: 15px;
-    border-style: outset;
-    border-color: #fef053;
+    border: none;
     padding: 0 0.4em 0.2em;
     position: relative;
   z-index: 1; /* matters! */
